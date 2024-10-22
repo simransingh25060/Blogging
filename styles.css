@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight:bolder;
+}
+ h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: #555;
+}
+
+#blog-list {
+    margin-top: 20px;
+}
+
+.blog {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.blog-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blog-actions {
+    margin-top: 10px;
+}
+
+.blog-actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

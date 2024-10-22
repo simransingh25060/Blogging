@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: fixed;
+    height: 7vh;
+    width: 100%;
+    background-color: #8EACCD;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 3vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 10;
+}
+.navbar a{
+    font-size: 1.5vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(25, 34, 84);
+    font-weight: 800;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: black;
+    border-bottom: 3px solid black;
+}
+.navbar a:hover{
+    transform:scale(1.1);
+} 
+.blogicon{ 
+    height: 3vw;
+    position: absolute;
+    left: 1em;
+}
+.homepics{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 5vw;
+}
+.hp1{
+   height: 15vw;
+   width: 15vw;
+   border-radius: 100px;
+}
+.hp2{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 100px;
+ }
+ .hp3{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 100px;
+ }
+ .hp4{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 100px;
+ }
+ .blogs{
+    display: flex;
+    justify-content: center;
+ }
+.blogs h1{
+    position:relative;
+    font-size: 10vw;
+    color: #8EACCD;
+    -webkit-text-stroke: 3px  black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.blogs h1::before {
+    content: "BLOGS";
+    position: absolute;
+    height: 100%;
+    color:  rgb(25, 34, 84) ; 
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+}
+#blog h1{
+    color: rgb(25, 34, 84);
+    text-decoration: underline;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.carddiv{
+    height: 100vh;
+    width:98vw;
+    padding: 10px 2px 10px 2px;
+}
+.blog
+{
+    height:48vh;
+    width: 48vw;
+    display: inline-block;
+    position: relative;
+    
+}
+#blog1
+{
+   position: relative;
+   top:-16vh;
+}
+.img1{
+    width:45vw;
+    height: 48vh;
+    margin-left: 4vw;
+    border-radius: 20px;
+}
+#read{
+    width:10vw;
+    height: 4vh;
+    color: white;
+    background-color: black;
+    margin-left: 35vw;
+    cursor: pointer;
+}
+#read:hover{
+    background-color: #b3acac;
+    color: black;
+    font-weight: bold;
+}
+#blog1 h2{
+    padding-left: 2em;
+}
+#blog1 h4{
+    padding-left: 3em;
+}
+#blog2 h2{
+    padding-left: 2em;
+}
+#blog2 h4{
+    padding-left: 3em;
+}
+#blog2{
+    position: relative;
+    bottom:50vh;
+}
+.img2{
+    position: relative;
+    top: -30vh;
+    width:45vw;
+    height: 48vh;
+    margin-left: 4vw;
+    border-radius: 20px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    height: 10vw;
+}
+.info h4{
+    font-size: 2vw;
+    font-family: cu;
+    color:rgb(25, 34, 84) ;
+    -webkit-text-stroke: 1.5px  black;
+    animation: scale-in-out 3s infinite ease-in-out;
+}
+ @keyframes scale-in-out {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+} 
+ }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+.btn{
+    background-color: #8EACCD;
+    -webkit-text-stroke: 1px black;
+    height: 5vw;
+    width: 15vw;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+    font-size: x-large;
+}
+.btn:hover{
+    background-color:#5885b5;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    background-size: cover;
+    text-align: center;
+    color:  rgb(245, 243, 248);
+    text-decoration: solid;
+    margin-top: 100px;
+}
+.contact h1{
+    color: rgb(25, 34, 84);
+    text-decoration: underline;
+    font-size: 3rem;
+    padding: 20px;
+}
+.contactForm 
+{
+    width: 55%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 100px;
+    background-color:  #8EACCD;
+    opacity: 80%;
+    border:4px solid rgb(25, 34, 84);
+}
+.contactForm .inputBox 
+{
+    position: relative;
+    width: 100%;
+    margin-top: 60px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox ruby-span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox a{
+
+    width: 100px;
+    background: #568852;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.contactForm .inputBox a:hover{
+    background-color: rgb(59, 114, 70);
+}
+.contact h2 
+{
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(25, 34, 84);
+    text-decoration: solid;
+    font-weight: bold;
+}
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#filling{
+    padding: 10px;
+    border-radius: 10px;
+}
+#filling:hover{
+   border:3px solid rgb(25, 34, 84);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+    background-color: #8EACCD;
+    color: rgb(25, 34, 84);
+    font-weight: bolder;
+    font-size: large;
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .navbar a {
+        font-size: 4vw; 
+        padding: 10px;
+    }
+
+    .hp1, .hp2, .hp3, .hp4 {
+        height: 25vw;
+        width: 25vw;
+    }
+
+    .blogs h1 {
+        font-size: 15vw;
+    }
+
+    .carddiv {
+        width: 90vw; 
+    }
+
+    .blog {
+        height:70vh;
+        width: 90vw;
+        margin: 0 auto; 
+    }
+    .img1{
+        margin-left: 28vw;
+    }
+    .img2{
+        margin-left: 28vw;
+    }
+
+    #read {
+        width: 20%; 
+        margin: 20px auto; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 20%; 
+        font-size: large; 
+    }
+
+    .contact {
+        padding: 20px;
+        margin-top:90vh;
+    }
+
+    .contactForm {
+        width: 90%; 
+        padding: 20px; 
+    }
+
+    .contact h2 {
+        font-size: 2rem; 
+    }
+}
